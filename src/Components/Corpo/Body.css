@@ -1,0 +1,143 @@
+.corpo {
+  /*position:relative;
+    height:325px;
+    width:325px;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  
+    align-items: center;
+    margin-top: 20px;*/
+  margin-top: 20px;
+}
+
+.acesso_agen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: none;
+  padding-left: 8%;
+  padding-right: 5%;
+  width: 20%;
+  height: 20%;
+  float: left;
+}
+
+.acesso_mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: none;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 20%;
+  height: 20%;
+  float: left;
+}
+
+.acesso_esp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: none;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 20%;
+  height: 20%;
+}
+
+.bto_Icone {
+  position: center;
+  align-items: center;
+  height: 128px;
+  width: 128px;
+  align-self: center;
+  background-color: white;
+  border: none;
+}
+
+.titulo_Icone {
+  font-family: 'Times New Roamn', sans-serif;
+  width: 150px;
+  font-size: 20px;
+  align-self: center;
+  line-height: 1.6em;
+  word-break: normal;
+  text-align: center;
+}
+
+.text_Icone {
+  display: flex;
+  font-family: 'Times New Roman', sans-serif;
+  color: grey;
+  font-size: 15px;
+  line-height: 1.6em;
+  word-break: normal;
+  width: 150px;
+  text-align: center;
+  align-self: center;
+}
+
+.bto_acesso {
+  display: flex;
+  background-color: #00a496;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  font-family: 'Times New Roman';
+  align-self: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.sobre_pomar {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.titu {
+  font-family: 'Times New Roamn', sans-serif;
+  font-size: 50px;
+  align-self: center;
+  font-size: 35px;
+}
+
+.text_apresen {
+  display: flex;
+  font-family: 'Times New Roman', sans-serif;
+  color: grey;
+  font-size: 15px;
+  line-height: 1.6em;
+  word-break: normal;
+  width: 150px;
+  text-align: justify;
+  align-self: right;
+}
+
+.text_faca {
+  display: flex;
+  font-family: 'Times New Roman', sans-serif;
+  color: grey;
+  font-size: 15px;
+  line-height: 1.6em;
+  word-break: normal;
+  width: 500px;
+  text-align: justify;
+  align-self: right;
+}
+
+.bto_msg {
+  display: flex;
+  background-color: #00a496;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  font-family: 'Times New Roman';
+  align-self: center;
+  text-align: center;
+  color: #ffffff;
+}

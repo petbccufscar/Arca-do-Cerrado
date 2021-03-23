@@ -7,7 +7,7 @@
 
   top: 0;
   left: 0;
-  background-color: rgb(4, 238, 4);
+
   width: 100%;
   height: 60px;
 }
@@ -25,9 +25,15 @@
   position: relative;
   width: 10%;
   height: 50%;
-  background-color: rgb(4, 238, 4);
+  background-color: transparent;
+  border-radius: 12px;
   border: none;
   outline: none;
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: red;
 }
 
 .pesquisa {
@@ -38,7 +44,7 @@
 
   margin-right: 80px;
   border: none;
-  background-color: white;
+  background-color: rgba(128, 128, 128, 0.5);
   border-radius: 12px;
   padding: 2px;
   justify-content: center;
@@ -48,6 +54,7 @@
   width: 70%;
   border: 0 none;
   outline: 0;
+  background: transparent;
 }
 
 #texto {
@@ -68,16 +75,18 @@
 .bto_pesq_adic {
   width: 20px;
   height: 20px;
-  background-color: white;
+
   border: none;
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 5px;
+  background-color: transparent;
 }
 
 .bto:hover {
-  background: #06b100;
+  background: rgba(192, 192, 192, 0.568);
+
   border: none;
-  border-color: #06b100;
+
   cursor: pointer;
 }
