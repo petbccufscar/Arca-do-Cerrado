@@ -4,6 +4,11 @@ import { Images, Colors } from '../../Themes'
 //import Images from '../Themes/Images'
 
 class Body extends Component {
+  handleSubimit (event) {
+    alert('Mensagem enviada.')
+    event.preventDefault()
+  }
+
   render () {
     return (
       <div class='corpo'>
@@ -65,21 +70,22 @@ class Body extends Component {
             conviver melhor com a vegetação e os animais e que cada um de nós
             pode fazer nossa parte, será bem-vindo/a a trabalhar conosco!
           </p>
-          <form action='/pagina-processa-dados-do-form' method='post'>
-            <div>
-              <input type='text' class='nome' placeholder='Nome' />
+          <form class='contato' onSubmit={this.handleSubimit} method='post'>
+            <div class='ordenacao'>
+              <div class='posi_nome'>
+                <input type='text' class='camp_nome' placeholder='Nome' />
+              </div>
+              <div class='posi_email'>
+                <input type='email' class='camp_email' placeholder='E-mail' />
+              </div>
             </div>
-            <div>
-              <input type='email' class='email' placeholder='E-mail' />
-            </div>
-            <div>
-              <textarea class='msg' placeholder='Nome'></textarea>
-            </div>
-            <div class='button'>
-              <button type='submit' class='bto_msg'>
-                Enviar sua mensagem
-              </button>
-            </div>
+            <label class='posi_msg'>
+              <textarea class='camp_msg' placeholder='Mensagem'></textarea>
+            </label>
+
+            <button type='submit' class='bto_msg' value='Enviar sua Mensagem'>
+              Enviar sua mensagem
+            </button>
           </form>
         </div>
       </div>
