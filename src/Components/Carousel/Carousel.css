@@ -1,0 +1,44 @@
+.carousel {
+  padding-bottom: 4px;
+}
+
+.carousel__slider-tray-wrapper,
+.carousel__slider-tray--horizontal {
+  height: 100%;
+}
+
+.carousel__back-button,
+.carousel__next-button {
+  padding: 0;
+}
+
+.carousel__back-button:disabled {
+  opacity: 0;
+  cursor: default;
+}
+
+.carousel__next-button:disabled {
+  opacity: 0;
+  cursor: default;
+}
+
+.carousel__dot {
+  padding: 0;
+  border: solid;
+  border-color: white;
+  border-width: 4px;
+  width: 15px;
+  height: 15px;
+  margin: 10px;
+}
+
+.carousel__dot--selected {
+  width: 20px;
+  height: 20px;
+  border-color: #009c84;
+  background-color: #009c84;
+}
+
+.carousel__dot:not(:last-child) {
+  margin-right: 4px;
+}

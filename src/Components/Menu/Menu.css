@@ -1,0 +1,92 @@
+.menu {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 60px;
+}
+
+.botoes {
+  position: relative;
+  padding: 8px 0px;
+  width: 100%;
+
+  text-align: right;
+  margin-right: 12px;
+}
+
+.bto {
+  position: relative;
+  width: 10%;
+  height: 50%;
+  background-color: transparent;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: red;
+}
+
+.pesquisa {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 150px;
+
+  margin-right: 80px;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 12px;
+  padding: 2px;
+  justify-content: center;
+}
+
+.pesq_campo {
+  width: 70%;
+  border: 0 none;
+  outline: 0;
+  background: transparent;
+}
+
+#texto {
+  float: left;
+  font-family: 'Arial';
+  font-size: 10%;
+  outline: none;
+  border: none;
+}
+
+.bto_pesq {
+  width: 20px;
+  height: 20px;
+  padding: 5px 5px;
+  position: fixed;
+}
+
+.bto_pesq_adic {
+  width: 20px;
+  height: 20px;
+
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 5px;
+  background-color: transparent;
+}
+
+.bto:hover {
+  background: rgba(192, 192, 192, 0.568);
+
+  border: none;
+
+  cursor: pointer;
+}
