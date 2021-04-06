@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import './Body.css'
-import { Images, Colors } from '../../Themes'
+import { Images } from '../../Themes'
 //import Images from '../Themes/Images'
 
 class Body extends Component {

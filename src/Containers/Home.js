@@ -8,12 +8,10 @@ class Home extends Component {
   render () {
     return (
       <Fragment>
-        <div style={{ margin: -10 }}>
-          <Carousel />
-          <Menu />
-          <Body />
-          <Rodape />
-        </div>
+        <Carousel />
+        <Menu />
+        <Body />
+        <Rodape />
       </Fragment>
     )
   }

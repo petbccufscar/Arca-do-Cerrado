@@ -31,7 +31,7 @@ class CarouselHome extends Component {
     super(props)
 
     const width = window.innerWidth
-    const height = window.innerHeight
+    const height = window.innerHeight / 1.5
 
     this.state = { width, height }
   }
@@ -54,6 +54,9 @@ class CarouselHome extends Component {
                     hasMasterSpinner={true}
                     src={image.image}
                     alt='description'
+                    style={{
+                      objectFit: 'cover'
+                    }}
                   />
                 </Slide>
               ))}
@@ -61,9 +64,10 @@ class CarouselHome extends Component {
             <ButtonBack
               style={{
                 position: 'absolute',
-                top: '50%',
+                top: 0,
                 left: 0,
                 border: 'none',
+                height: this.state.height,
                 backgroundColor: 'transparent',
                 outline: 0
               }}
@@ -73,9 +77,10 @@ class CarouselHome extends Component {
             <ButtonNext
               style={{
                 position: 'absolute',
-                top: '50%',
+                top: 0,
                 right: 0,
                 border: 'none',
+                height: this.state.height,
                 backgroundColor: 'transparent',
                 outline: 0
               }}
@@ -92,12 +97,46 @@ class CarouselHome extends Component {
               display: 'flex',
               flexDirection: 'row',
               justifyContent: 'center',
-              top: '95%'
+              top: '60%'
             }}
           >
             {images.map((image, index) => (
-              <Dot key={index} slide={index} style={{ borderRadius: '50%' }} />
+              <Dot key={index} slide={index} style={{ borderRadius: '30%' }} />
             ))}
+          </div>
+          <div
+            style={{
+              position: 'absolute',
+              alignItems: 'center',
+              width: '100%',
+              paddingTop: '4px',
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'center',
+              top: '25%',
+              color: 'white',
+              fontWeight: 'bold',
+              fontSize: 60
+            }}
+          >
+            A ARCA DO CERRADO
+          </div>
+          <div
+            style={{
+              position: 'absolute',
+              alignItems: 'center',
+              width: '100%',
+              paddingTop: '4px',
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'center',
+              top: '35%',
+              color: 'white',
+              fontWeight: 'bold',
+              fontSize: 30
+            }}
+          >
+            Uma visita pelo cerrado!
           </div>
         </CarouselProvider>
       </div>
