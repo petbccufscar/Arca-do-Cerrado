@@ -95,8 +95,10 @@
 
 .sobre_pomar {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-top: 50px;
+  width: '100%';
 }
 
 .titu {
@@ -107,36 +109,113 @@
 }
 
 .text_apresen {
-  display: flex;
   font-family: 'Times New Roman', sans-serif;
   color: grey;
-  font-size: 15px;
-  line-height: 1.6em;
-  word-break: normal;
-  width: 150px;
-  text-align: justify;
-  align-self: right;
-}
-
-.text_faca {
-  display: flex;
-  font-family: 'Times New Roman', sans-serif;
-  color: grey;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.6em;
   word-break: normal;
   width: 500px;
   text-align: justify;
-  align-self: right;
+  align-self: center;
+}
+
+.faca_parte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  width: '100%';
+}
+
+.text_faca {
+  font-family: 'Times New Roman', sans-serif;
+  color: grey;
+  font-size: 20px;
+  line-height: 1.6em;
+  word-break: normal;
+  width: 80%;
+  text-align: justify;
+  align-self: center;
+}
+
+.contato {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.ordenacao {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.posi_nome {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+}
+
+.camp_nome {
+  width: 100%;
+  box-shadow: 0 0 0 0;
+  border-top: 0 none;
+  border-right: 0 none;
+  border-left: 0 none;
+  outline: 0;
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 20px;
+}
+
+.posi_email {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  margin-left: 10%;
+}
+
+.camp_email {
+  width: 100%;
+  display: block;
+  box-shadow: 0 0 0 0;
+  border-top: 0 none;
+  border-right: 0 none;
+  border-left: 0 none;
+  flex-direction: column;
+  outline: 0;
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 20px;
+}
+
+.posi_msg {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.camp_msg {
+  flex-direction: column;
+  box-shadow: 0 0 0 0;
+  border-top: 0 none;
+  border-right: 0 none;
+  border-left: 0 none;
+  outline: 0;
+  resize: none;
+  width: 90%;
+  float: inline-end;
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 20px;
 }
 
 .bto_msg {
   display: flex;
+  margin-top: 40px;
   background-color: #00a496;
   border-radius: 10px;
   border: none;
   padding: 5px;
   font-family: 'Times New Roman';
+  font-size: 20px;
   align-self: center;
   text-align: center;
   color: #ffffff;
