@@ -6,6 +6,7 @@ const images = {
   calendario: require('../Images/Corpo/calendar.png'),
   planeta: require('../Images/Corpo/worldwide.png'),
   planta: require('../Images/Corpo/sprout.png'),
+  logoArca: require('../Images/logo.jpeg'),
   logoUFSCar: require('../Images/Rodape/LogoUFSCar.jpg'),
   logoUFSCarTrans: require('../Images/Rodape/logoUFSCarFundoTransparente.png')
 }

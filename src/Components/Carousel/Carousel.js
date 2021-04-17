@@ -113,7 +113,7 @@ class CarouselHome extends Component {
               display: 'flex',
               flexDirection: 'row',
               justifyContent: 'center',
-              top: '25%',
+              top: '30%',
               color: 'white',
               fontWeight: 'bold',
               fontSize: 60
@@ -130,7 +130,7 @@ class CarouselHome extends Component {
               display: 'flex',
               flexDirection: 'row',
               justifyContent: 'center',
-              top: '35%',
+              top: '40%',
               color: 'white',
               fontWeight: 'bold',
               fontSize: 30

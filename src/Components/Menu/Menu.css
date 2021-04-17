@@ -4,32 +4,38 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
+  background-color: white;
   top: 0;
   left: 0;
 
   width: 100%;
-  height: 60px;
+  height: 80px;
 }
 
 .botoes {
   position: relative;
   padding: 8px 0px;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 
   text-align: right;
   margin-right: 12px;
 }
 
 .bto {
-  position: relative;
-  width: 10%;
+  margin-right: 16px;
+  margin-left: 16px;
   height: 50%;
   background-color: transparent;
   border-radius: 12px;
   border: none;
   outline: none;
-  color: white;
+  color: black;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 :-ms-input-placeholder {
@@ -76,6 +82,7 @@
   width: 20px;
   height: 20px;
 
+  margin-right: 16px;
   border: none;
   background-repeat: no-repeat;
   background-position: center;
@@ -84,9 +91,14 @@
 }
 
 .bto:hover {
-  background: rgba(192, 192, 192, 0.568);
+  color: #00a496;
 
   border: none;
-
   cursor: pointer;
+}
+
+.logo {
+  margin-left: 60px;
+  width: 80px;
+  height: 80px;
 }

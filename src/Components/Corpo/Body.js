@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './Body.css'
 import { Images } from '../../Themes'
-//import Images from '../Themes/Images'
 
 class Body extends Component {
   handleSubimit (event) {
