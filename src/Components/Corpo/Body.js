@@ -13,7 +13,7 @@ class Body extends Component {
     return (
       <div class='corpo'>
         <div class='acessos'>
-          <div class='acesso_agen'>
+          <div class='acesso_agen' >
             <button
               style={{ backgroundImage: `url(${Images.calendario.default})` }}
               class='bto_Icone'
