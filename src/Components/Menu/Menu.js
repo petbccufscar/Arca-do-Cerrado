@@ -1,9 +1,18 @@
 import React, { Component, Fragment } from 'react'
 import './Menu.css'
 import Images from '../../Themes/Images'
-import { Redirect } from 'react-router'
+import { withRouter } from 'react-router'
+import { menuItems } from './utils'
 
 class Menu extends Component {
+  constructor (props) {
+    super(props)
+
+    const current = props.history.location.pathname
+
+    this.state = { current }
+  }
+
   render () {
     return (
       <Fragment>
@@ -15,37 +24,24 @@ class Menu extends Component {
               alt='Italian Trulli'
             />
             <div class='botoes'>
-              <button
-                class='bto'
-                id='bto_mapa'
-                onClick={() => <Redirect to={`/`} />}
-              >
-                Início
-              </button>
-              <button
-                class='bto'
-                id='bto_mapa'
-                onClick={() => <Redirect to={`/sobre`} />}
-              >
-                Sobre
-              </button>
-              <button class='bto' id='bto_mapa'>
-                Mapa Interativo
-              </button>
-              <button class='bto' id='bto_blog'>
-                Blog
-              </button>
-              <button class='bto' id='bto_faca_parte'>
-                Espécies
-              </button>
-              <button class='bto' id='bto_sobre'>
-                Agenda
-              </button>
-              <button class='bto' id='bto_faca_parte'>
-                Faça Parte
-              </button>
+              {menuItems.map(item =>
+                this.state.current === `${item.pathname}` ? (
+                  <button
+                    class='bto_active'
+                    onClick={() => this.props.history.push(item.pathname)}
+                  >
+                    {item.label}
+                  </button>
+                ) : (
+                  <button
+                    class='bto'
+                    onClick={() => this.props.history.push(item.pathname)}
+                  >
+                    {item.label}
+                  </button>
+                )
+              )}
             </div>
-
             <button
               style={{ backgroundImage: `url(${Images.procurar.default})` }}
               class='bto_pesq_adic'
@@ -57,4 +53,4 @@ class Menu extends Component {
   }
 }
 
-export default Menu
+export default withRouter(Menu)

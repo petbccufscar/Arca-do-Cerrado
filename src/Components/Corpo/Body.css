@@ -1,96 +1,90 @@
 .corpo {
-  /*position:relative;
-    height:325px;
-    width:325px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-  
-    align-items: center;
-    margin-top: 20px;*/
-  margin-top: 20px;
+.acessos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .acesso_agen {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: none;
-  padding-left: 8%;
-  padding-right: 5%;
-  width: 20%;
-  height: 20%;
-  float: left;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .acesso_mapa {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: none;
-  padding-left: 5%;
-  padding-right: 5%;
-  width: 20%;
-  height: 20%;
-  float: left;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .acesso_esp {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: none;
-  padding-left: 5%;
-  padding-right: 5%;
-  width: 20%;
-  height: 20%;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .bto_Icone {
   position: center;
   align-items: center;
-  height: 128px;
-  width: 128px;
+  height: 100px;
+  width: 100px;
+  background-size: 100px 100px;
   align-self: center;
   background-color: white;
   border: none;
+  cursor: pointer;
+  outline-style: none;
 }
 
 .titulo_Icone {
-  font-family: 'Times New Roamn', sans-serif;
-  width: 150px;
-  font-size: 20px;
-  align-self: center;
-  line-height: 1.6em;
-  word-break: normal;
+  color: #777777;
+  font-size: 24px;
   text-align: center;
 }
 
 .text_Icone {
-  display: flex;
-  font-family: 'Times New Roman', sans-serif;
   color: grey;
-  font-size: 15px;
-  line-height: 1.6em;
+  font-size: 18px;
+  line-height: 1.4em;
   word-break: normal;
-  width: 150px;
+  width: 200px;
+  margin-top: -12px;
   text-align: center;
   align-self: center;
 }
 
 .bto_acesso {
-  display: flex;
+  font-size: 18px;
+  margin-top: 16px;
   background-color: #00a496;
-  border-radius: 10px;
+  border-radius: 18px;
   border: none;
-  padding: 5px;
-  font-family: 'Times New Roman';
-  align-self: center;
+  padding: 8px;
   text-align: center;
   color: #ffffff;
+  width: 100%;
+  cursor: pointer;
+  outline-style: none;
+}
+
+.apresentacao {
+  width: 60%;
 }
 
 .sobre_pomar {
@@ -98,24 +92,23 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 50px;
-  width: '100%';
 }
 
 .titu {
-  font-family: 'Times New Roamn', sans-serif;
+  color: #777777;
   font-size: 50px;
   align-self: center;
   font-size: 35px;
+  text-transform: uppercase;
 }
 
 .text_apresen {
-  font-family: 'Times New Roman', sans-serif;
   color: grey;
   font-size: 20px;
+  margin-top: -8px;
   line-height: 1.6em;
   word-break: normal;
-  width: 500px;
-  text-align: justify;
+  text-align: center;
   align-self: center;
 }
 
@@ -124,17 +117,15 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 50px;
-  width: '100%';
 }
 
 .text_faca {
-  font-family: 'Times New Roman', sans-serif;
   color: grey;
+  margin-top: -8px;
   font-size: 20px;
   line-height: 1.6em;
   word-break: normal;
-  width: 80%;
-  text-align: justify;
+  text-align: center;
   align-self: center;
 }
 
@@ -142,7 +133,8 @@
   display: flex;
   align-self: center;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
+  margin-top: 12px;
 }
 
 .ordenacao {
@@ -163,16 +155,16 @@
   border-top: 0 none;
   border-right: 0 none;
   border-left: 0 none;
+  border-bottom: 1px solid #777777;
   outline: 0;
-  font-family: 'Times New Roman', sans-serif;
   font-size: 20px;
 }
 
 .posi_email {
   display: flex;
   flex-direction: row;
-  width: 40%;
-  margin-left: 10%;
+  flex: 1;
+  margin-left: 50px;
 }
 
 .camp_email {
@@ -183,8 +175,8 @@
   border-right: 0 none;
   border-left: 0 none;
   flex-direction: column;
+  border-bottom: 1px solid #777777;
   outline: 0;
-  font-family: 'Times New Roman', sans-serif;
   font-size: 20px;
 }
 
@@ -194,16 +186,15 @@
 }
 
 .camp_msg {
-  flex-direction: column;
+  width: 100%;
+  display: block;
   box-shadow: 0 0 0 0;
   border-top: 0 none;
   border-right: 0 none;
   border-left: 0 none;
+  flex-direction: column;
+  border-bottom: 1px solid #777777;
   outline: 0;
-  resize: none;
-  width: 90%;
-  float: inline-end;
-  font-family: 'Times New Roman', sans-serif;
   font-size: 20px;
 }
 
@@ -211,12 +202,13 @@
   display: flex;
   margin-top: 40px;
   background-color: #00a496;
-  border-radius: 10px;
-  border: none;
-  padding: 5px;
-  font-family: 'Times New Roman';
-  font-size: 20px;
+  padding: 8px 16px;
   align-self: center;
+  font-size: 18px;
+  border-radius: 18px;
+  border: none;
   text-align: center;
   color: #ffffff;
+  cursor: pointer;
+  outline-style: none;
 }
