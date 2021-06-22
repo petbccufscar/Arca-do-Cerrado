@@ -1,7 +1,14 @@
+.flex {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .corpo-especies {
   margin-top: 60px;
   margin: 40px;
   margin-bottom: 20px;
+  flex: 1;
 }
 
 .margin-corpo-especies {
@@ -12,6 +19,11 @@
 .textos {
   padding-top: 20px;
   width: 100%;
+}
+
+.titulo-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .linha-horizontal {
@@ -91,4 +103,69 @@
   border: none;
   cursor: pointer;
   outline-style: none;
+}
+
+.bto_mapa {
+  background-color: #00a496;
+  padding: 8px 16px;
+  align-self: center;
+  font-size: 16px;
+  border-radius: 18px;
+  border: none;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  outline-style: none;
+  margin-left: 18px;
+}
+
+.bto_up {
+  background-color: #00a496;
+  align-self: center;
+  font-size: 16px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  outline-style: none;
+}
+
+.intro {
+  font-size: 18px;
+  color: #777777;
+  padding-left: 12px;
+  border-left: 3px solid #00a496;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  line-height: 24px;
+}
+
+.texto {
+  font-size: 18px;
+  margin-bottom: 12px;
+  line-height: 24px;
+}
+
+.image-especie {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.image-up {
+  width: 20px;
+  height: 12px;
+}
+
+.up-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }

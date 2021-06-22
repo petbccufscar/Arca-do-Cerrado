@@ -8,7 +8,8 @@ const images = {
   planta: require('../Images/Corpo/sprout.png'),
   logoArca: require('../Images/logo.jpeg'),
   logoUFSCar: require('../Images/Rodape/LogoUFSCar.jpg'),
-  logoUFSCarTrans: require('../Images/Rodape/logoUFSCarFundoTransparente.png')
+  logoUFSCarTrans: require('../Images/Rodape/logoUFSCarFundoTransparente.png'),
+  up: require('../Images/up.png')
 }
 
 export default images

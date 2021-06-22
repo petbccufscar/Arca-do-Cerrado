@@ -25,7 +25,16 @@ class Menu extends Component {
             />
             <div class='botoes'>
               {menuItems.map(item =>
-                this.state.current === `${item.pathname}` ? (
+                item.drop ? (
+                  <div class='dropdown'>
+                    <button class='bto'>{item.label}</button>
+                    <div class='dropdown-content'>
+                      {item.drop.map(itemDrop => (
+                        <button class='bto_drop'>{itemDrop.label}</button>
+                      ))}
+                    </div>
+                  </div>
+                ) : this.state.current === `${item.pathname}` ? (
                   <button
                     class='bto_active'
                     onClick={() => this.props.history.push(item.pathname)}
